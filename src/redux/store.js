@@ -17,7 +17,17 @@ const feelingData = (state = '', action) => {
 const understandingData = (state = '', action) => {
     if (action.type === 'ADD_UNDERSTANDING') {
         const understandingInfo = action.payload
-        return understandingData;
+        return understandingInfo;
+    }
+
+    return state;
+}
+
+//Reducer for Supported function
+const supportedData = (state = '', action) => {
+    if (action.type === 'ADD_SUPPORTED') {
+        const supportedInfo = action.payload
+        return supportedInfo;
     }
 
     return state;
@@ -26,7 +36,8 @@ const understandingData = (state = '', action) => {
 const store = createStore(
     combineReducers({
         feelingData,
-        understandingData
+        understandingData,
+        supportedData
 
     }),
     applyMiddleware(logger),

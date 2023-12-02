@@ -11,7 +11,7 @@ function Understanding() {
     // This function will collect the value of the imput and move to the next page
     const collectUnderstanding = (e) => {
         e.preventDefault()
-        console.log('')
+        console.log('In collectUnderstanding')
 
         dispatch({
             type: 'ADD_UNDERSTANDING',
@@ -33,7 +33,7 @@ function Understanding() {
                 onChange={(event) => setUnderstanding(event.target.value)}
                 />
 
-                <button data-testid="next" onClick={collectUnderstanding}> Next </button>
+                <button data-testid="next" onClick={collectUnderstanding}>Next</button>
 
             </div>
          </form>
