@@ -14,10 +14,19 @@ const feelingData = (state = '', action) => {
 }
 
 // Reducer for Understanding componet
+const understandingData = (state = '', action) => {
+    if (action.type === 'ADD_UNDERSTANDING') {
+        const understandingInfo = action.payload
+        return understandingData;
+    }
+
+    return state;
+}
 
 const store = createStore(
     combineReducers({
-        feelingData
+        feelingData,
+        understandingData
 
     }),
     applyMiddleware(logger),

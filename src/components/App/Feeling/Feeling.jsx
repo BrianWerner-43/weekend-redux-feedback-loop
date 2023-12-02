@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 
 
 function Feeling() {
-    let [feeling, setFeeling] = useState('');
+    let [feeling, setFeeling] = useState('')
     const dispatch = useDispatch()
     const history = useHistory()
 
@@ -17,7 +17,7 @@ function Feeling() {
             type: 'ADD_FEELING',
             payload: feeling
         })
-        history.push('/underStanding')
+        history.push('/understanding')
     }
 
     return (
@@ -27,7 +27,7 @@ function Feeling() {
             <div data-testid="input">
             <label>Feeling ? </label>
                 <input
-                placeholder={'feeling'}
+                placeholder={'Feeling'}
                 value={feeling}
                 type={'number'}
                 onChange={(event) => setFeeling(event.target.value)}

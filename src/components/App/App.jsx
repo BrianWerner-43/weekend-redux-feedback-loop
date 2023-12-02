@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import Feeling from './Feeling/Feeling.jsx';
+import Understanding from './Understanding/Understanding.jsx';
 // import HashRouter as Router, Route
 import { HashRouter as Router, Route } from 'react-router-dom';
 // import sucess page and admin panel page
@@ -20,6 +21,9 @@ return (
     </header>
   <Route exact path="/">
     <Feeling />
+  </Route>
+  <Route exact path="/understanding">
+    <Understanding />
   </Route>
 </Router>
   </div>
