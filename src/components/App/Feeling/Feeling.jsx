@@ -1,4 +1,5 @@
-import{ useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ function Feeling() {
             type: 'ADD_FEELING',
             payload: feeling
         })
-        history.push('./underStanding')
+        history.push('/underStanding')
     }
 
     return (
@@ -24,14 +25,15 @@ function Feeling() {
          <h2>How are you feeling today?</h2>
          <form>
             <div data-testid="input">
-            <label>Feeling ?</label>
+            <label>Feeling ? </label>
                 <input
                 placeholder={'feeling'}
                 value={feeling}
                 type={'number'}
                 onChange={(event) => setFeeling(event.target.value)}
                 />
-                <button onClick={collectFeeling}>Next</button>
+                
+                <button  data-testid="next" onClick={collectFeeling}>Next</button>
             </div>
            
          </form>
