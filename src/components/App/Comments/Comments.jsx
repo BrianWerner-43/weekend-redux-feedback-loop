@@ -24,9 +24,10 @@ function Comments() {
         <>
          <h2>Any comments you want to leave ?</h2>
          <form>
-            <div data-testid="input">
-                <label> Comments </label>
+            <div>
+                 <p>Comments</p> 
                 <input
+                data-testid="input"
                 placeholder={'comments'}
                 value={comments}
                 type={'text'}

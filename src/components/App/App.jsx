@@ -1,17 +1,15 @@
 import React from 'react';
-import axios from 'axios';
 import './App.css';
 import Feeling from './Feeling/Feeling.jsx';
 import Understanding from './Understanding/Understanding.jsx';
 import Supported from './Suppoeted/Suppoeted.jsx';
 import Comments from './Comments/Comments.jsx';
 import Review from './Review/Review.jsx';
+import ThankYou from '../ThankYou/ThankYou.jsx';
 // import HashRouter as Router, Route
 import { HashRouter as Router, Route } from 'react-router-dom';
-// import sucess page and admin panel page
 
-// Each form page should be in it's own route ex: <Route exact path="/">
-// Refrence pizza parlor for linking pages
+
 
 function App() {
 
@@ -36,6 +34,9 @@ return (
   </Route>
   <Route exact path="/review">
     <Review />
+  </Route>
+  <Route exact path="/thankYou">
+    <ThankYou />
   </Route>
 </Router>
   </div>

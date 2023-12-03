@@ -24,9 +24,10 @@ function Understanding() {
         <>
          <h2>How well are you understanding the content ?</h2>
          <form>
-            <div data-testid="input">
+            <div>
                 <label> Understanding ? </label>
                 <input
+                data-testid="input"
                 placeholder={'Understanding'}
                 value={understanding}
                 type={'number'}

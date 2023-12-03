@@ -24,9 +24,10 @@ function Feeling() {
         <>
          <h2>How are you feeling today?</h2>
          <form>
-            <div data-testid="input">
+            <div>
             <label>Feeling ? </label>
                 <input
+                data-testid="input" // 👈 test id here
                 placeholder={'Feeling'}
                 value={feeling}
                 type={'number'}

@@ -30,7 +30,7 @@ function Review() {
             dispatch({
                 type: "CLEAR_INPUTS"
             })
-            history.push('/success')
+            history.push('/thankYou')
             console.log('In our post route !!');    
         })
         .catch((err) => {

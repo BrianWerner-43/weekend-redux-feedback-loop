@@ -24,9 +24,10 @@ function Supported() {
         <>
          <h2>How well are you being supported ?</h2>
          <form>
-            <div data-testid="input">
+            <div>
                 <label> Supported ? </label>
                 <input
+                data-testid="input"
                 placeholder={'supported'}
                 value={supported}
                 type={'text'}
