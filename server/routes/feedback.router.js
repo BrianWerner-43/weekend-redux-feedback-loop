@@ -19,7 +19,7 @@ INSERT INTO "feedback"
         res.sendStatus(201);
       })
       .catch(error => {
-        console.log(`Error adding new book`, error);
+        console.log(`Error adding new feedback`, error);
         res.sendStatus(500);
       });
   });

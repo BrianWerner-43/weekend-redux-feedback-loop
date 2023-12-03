@@ -22,8 +22,6 @@ function Review() {
                 understanding: understandingInfo,
                 support: supportInfo,
                 comments: commentInfo
-
-
             }
         })
         .then((res) => {
@@ -43,14 +41,18 @@ function Review() {
     return (
 
         <>
+        <div className="h1-comment">
          <h1>Review Your Feedback</h1>
+         </div>
          <div>
+            <div className="p-tags">
             <p>Feelings: {feelingInfo}</p>
             <p>Understanding: {understandingInfo}</p>
             <p>Support: {supportInfo}</p>
             <p>Comments: {commentInfo}</p>
+            </div>
 
-            <button data-testid="next" onClick={postInfoToServer}>Submit</button>
+            <button data-testid="next" className="submit-btn" onClick={postInfoToServer}>Submit</button>
          </div>
         
         </>

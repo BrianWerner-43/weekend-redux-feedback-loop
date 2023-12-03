@@ -11,7 +11,7 @@ function Supported() {
     // This function will collect the value of the imput and move to the next page
     const collectSupported = (e) => {
         e.preventDefault()
-        console.log('In collectSupported', collectSupported);
+        console.log('In collectSupported');
 
         dispatch({
             type: 'ADD_SUPPORTED',
@@ -22,11 +22,14 @@ function Supported() {
 
     return (
         <>
-         <h2>How well are you being supported ?</h2>
+        <div className="h2-feel">
+         <h2>How well are you being supported 1-5</h2>
+         </div>
          <form>
             <div>
-                <label> Supported ? </label>
+                <p className="p-tag">Supported ? </p> 
                 <input
+                className="feel-input"
                 data-testid="input"
                 placeholder={'supported'}
                 value={supported}

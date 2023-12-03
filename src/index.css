@@ -2,4 +2,55 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: rgb(3, 121, 123);
 }
+
+/* These are for the Feeling componet styles */
+.h2-feel{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(223, 196, 44);
+ 
+}
+
+.p-tag {
+  font-family: fantasy;
+}
+
+.feel-input {
+  
+  background-color: aqua;
+}
+/* End of Feeling componet styles */
+
+/* Comments componet page styles */
+.h1-comment {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(235, 208, 52);
+}
+
+.p-tags {
+  font-family: fantasy;
+}
+
+.submit-btn {
+  background-color: crimson;
+  border-radius: 10px;
+}
+/* End of Comments componet styles */
+
+/* Thank you componet styles */
+.h1-head {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(245, 218, 64);
+}
+
+.h3 {
+  font-family: fantasy;
+  color: rgb(93, 10, 171);
+}
+
+.feedback-btn {
+  background-color: crimson;
+  border-radius: 10px;
+}
+/* End of Thank you componet styles */

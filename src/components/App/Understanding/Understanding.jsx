@@ -22,11 +22,14 @@ function Understanding() {
 
     return (
         <>
+        <div className="h2-feel">
          <h2>How well are you understanding the content ?</h2>
+         </div>
          <form>
             <div>
-                <label> Understanding ? </label>
+                <p className="p-tag"> Understanding 1-5</p>
                 <input
+                className="feel-input"
                 data-testid="input"
                 placeholder={'Understanding'}
                 value={understanding}
@@ -35,7 +38,6 @@ function Understanding() {
                 />
 
                 <button data-testid="next" onClick={collectUnderstanding}>Next</button>
-
             </div>
          </form>
         

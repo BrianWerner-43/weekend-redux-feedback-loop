@@ -22,12 +22,16 @@ function Feeling() {
 
     return (
         <>
+     <div>
+        <div className="h2-feel">
          <h2>How are you feeling today?</h2>
+        </div>
          <form>
             <div>
-            <label>Feeling ? </label>
+            <p className="p-tag">Feeling 1-5 </p>
                 <input
-                data-testid="input" // 👈 test id here
+                className="feel-input"
+                data-testid="input" 
                 placeholder={'Feeling'}
                 value={feeling}
                 type={'number'}
@@ -35,16 +39,14 @@ function Feeling() {
                 />
                 
                 <button  data-testid="next" onClick={collectFeeling}>Next</button>
-            </div>
-           
+            </div> 
          </form>
-        
+     </div>
         
         </>
     )
 
-// The next button will need the data-testid="next"
-// The input will also need the data-testid="input"
+
 }
 
 

@@ -22,11 +22,14 @@ function Comments() {
 
     return (
         <>
+        <div className="h2-feel">
          <h2>Any comments you want to leave ?</h2>
+         </div>
          <form>
             <div>
-                 <p>Comments</p> 
+                 <p className="p-tag">Comments</p> 
                 <input
+                className="feel-input"
                 data-testid="input"
                 placeholder={'comments'}
                 value={comments}

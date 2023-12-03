@@ -1,14 +1,30 @@
 .App {
   text-align: center;
+  
 }
 
 .App-header {
-  background-color: #033076;
+  background-color: #1a8ddf;
   min-height: 70px;
   padding: 20px;
-  color: white;
+  color: rgb(100, 240, 100);
   margin-bottom: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url(/public/images/sponge-bob-feedback.jpeg);
+  background-repeat: no-repeat;
+  animation: 5s slide-right linear infinite;
 }
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+
 
 .App-title {
   font-size: 2em;

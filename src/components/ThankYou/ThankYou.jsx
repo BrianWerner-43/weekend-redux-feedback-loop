@@ -14,14 +14,17 @@ function ThankYou() {
     return (
         <>
         <div>
+          <div className="h1-head">
           <header>
             <h1>Feedback!</h1>
           </header>
+          </div>
+          <div className="h3">
+          <h3>Thank You !</h3>
+          </div>
 
-          <h1>Thank You !</h1>
-
-              
-          <button data-testid="next" onClick={restFeedback}>Leave New Feedback</button>
+               
+          <button data-testid="next" className="feedback-btn" onClick={restFeedback}>Leave New Feedback</button>
 
           </div>
         

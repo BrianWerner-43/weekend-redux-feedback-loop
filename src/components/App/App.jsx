@@ -6,7 +6,6 @@ import Supported from './Suppoeted/Suppoeted.jsx';
 import Comments from './Comments/Comments.jsx';
 import Review from './Review/Review.jsx';
 import ThankYou from '../ThankYou/ThankYou.jsx';
-// import HashRouter as Router, Route
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 
